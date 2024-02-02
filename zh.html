@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>VRChat潮州会馆官方网站</title>
+		<link href="/style.css" type="text/css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://www.w3schools.cn/lib/w3.js"></script> 
+	</head>
+
+<body class="bg-body-tertiary font-zh">
+
+<!--   <div w3-include-html="/include/nav-zh.html"></div>   -->
+<!--
+ bg-gradient     data-bs-theme="dark"    -fluid   d-flex align-items-center    bg-primary   width: max-content;
+-->
+
+<nav class="navbar navbar-expand-lg bg-primary bg-gradient sticky-top shadow" data-bs-theme="dark">
+	<div class="container">
+		<a class="navbar-brand ms-2 ms-lg-0 fs-3" href="/zh.html">
+			<span class="font-vrc">VRChat</span><span class="font-teo ms-2">潮州會館</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0 grid gap-lg-2">
+
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="/zh.html"><i class="fa-fw fa-solid fa-house-chimney me-2 me-lg-1"></i>首页</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/member/zh.html"><i class="fa-fw fa-solid fa-users me-2 me-lg-1"></i>会员</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/gallery/zh.html"><i class="fa-fw fa-solid fa-camera me-2 me-lg-1"></i>画廊</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/contact/zh.html"><i class="fa-fw fa-solid fa-phone me-2 me-lg-1"></i>联络</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/about/zh.html"><i class="fa-fw fa-solid fa-circle-info me-2 me-lg-1"></i>关于</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						<i class="fa-fw fa-solid fa-globe me-2 me-lg-1"></i><abbr title="Language" style="cursor: pointer;">语言</abbr>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-end" data-bs-theme="light">
+						<li><a class="dropdown-item" href="./">潮州話 - Teochew</a></li>
+						<li><a class="dropdown-item active" href="#" aria-current="page">电影話 - Mandarin</a></li>
+						<li><a class="dropdown-item" href="./en.html">紅毛話 - English</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div class="d-lg-none alert alert-warning alert-dismissible fade show" role="alert">
+	因技术能力所限，本站对手机等小屏幕设备适配不佳，建议使用电脑以获取最佳浏览体验。
+	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+<div class="container">  <!-- HERO -->
+	<div class="row my-lg-5 d-flex align-items-center mb-5">  <!-- HERO -->
+		<div class="col-lg-5 mt-lg-5 mt-4">  <!-- hero右栏 -->
+			  <!-- 绘制logo，p勿改，调位置改m -->
+				<div class="bg-primary text-white rounded rounded-4 text-center py-4 py-md-5 mx-2 mx-lg-4">
+					<span style="direction: rtl; unicode-bidi: bidi-override; font-size: 4em; line-height: 0.8em;" class="font-teo">潮州會館</span><br />
+					<span class="text-uppercase fw-bold" style="font-size: 1em; font-family: Arial; line-height: 1em; letter-spacing: 1px; word-spacing: 0.5em;">Teochew Association</span>
+				</div>
+				<!-- 会馆统计信息-->
+				<div class="text-body-secondary row mt-3 d-flex justify-content-sm-center ms-2 ms-lg-0">
+					<div class="col-auto">
+						<i class="fa-fw fa-solid fa-location-dot me-1 text-primary"></i>基于<span class="font-vrc"><span class="text-black bg-white">VR</span><span class="text-white bg-black rounded rounded-2 px-1">Chat</span></span>
+					</div>
+					<div class="col-auto">
+						<i class="fa-fw fa-solid fa-clock me-1 text-primary"></i>始于2023年2月
+					</div>
+					<div class="col-auto">
+						<i class="fa-fw fa-solid fa-users me-1 text-primary"></i>云集<abbr title="2024年年初数据">140</abbr>多位成员
+					</div>
+				</div>
+				<!-- 联络社交按钮 -->
+				<div class="d-flex justify-content-center mt-3">
+					<span data-bs-toggle="popover" data-bs-placement="bottom" data-bs-title="QQ群号（用潮汕话读出）" data-bs-content="乐力字衫龙七泽力乐" style="cursor: pointer;">
+						<span class="fa-stack fa-2x" title="QQ群"><i class="fa-solid fa-square fa-stack-2x" style="color: #009cff;"></i><i class="fa-brands fa-qq fa-stack-1x fa-inverse"></i></span>
+					</span>
+
+					<a class="fa-stack fa-2x" title="Discord服务器" href="https://discord.com/invite/R48epUu4H4" target="_blank"><i class="fa-solid fa-square fa-stack-2x" style="color: #7289da;"></i><i class="fa-brands fa-discord fa-stack-1x fa-inverse"></i></a>
+
+					<a class="fa-stack fa-2x" title="Steam组" href="https://steamcommunity.com/groups/vrcteo" target="_blank"><i class="fa-solid fa-square fa-stack-2x" style="color: #171a21 ;"></i><i class="fa-brands fa-steam fa-stack-1x fa-inverse"></i></a>
+				</div>
+		</div>  <!-- Hero右栏完 -->
+
+		<article class="col-lg-7 order-lg-first pe-lg-5 px-4 px-lg-1">  <!-- Hero左栏 -->
+			<h1 class="display-5 fw-bold text-primary text-uppercase my-3">立足VRChat元宇宙<br />面向海内外潮汕玩家</h1>
+			<p class="lead">VRChat是Steam平台上的一款免费全球社交游戏。我们潮汕玩家初到VRChat时，可能会面临语言不通，不会操作，没有玩伴等困难。而我们的先辈在几百年前背井离乡到海外谋生，也面临着类似的困难。于是，我们决定像先辈在海外建立会馆同乡会那般，建立元宇宙的潮州会馆，汇集中国潮汕玩家和海外潮人同胞。欢迎加入我们一起玩耍！</p>
+			<p>
+				<div class="text-body-secondary small"><i class="bi bi-translate me-1"></i>想愛試下看潮州話正字？換到<a href="./">潮州話</a>版本</div>
+				<div class="text-body-secondary small"><i class="bi bi-translate me-1"></i>Can't understand Chinese? Switch to <a href="./en.html">English</a> version</div>
+			</p>
+			<a type="button" class="btn btn-primary btn-lg" href="https://vrc.group/TEO.9587" target="_blank" title="需要登录VRChat帐号">入会 TEO.9587</a>
+			<a type="button" class="btn btn-outline-primary btn-lg ms-1" href="/about/zh.html">会馆历史</a>
+		</article>
+	</div>
+</div>
+
+
+<div class="container">  <!-- 往期活动和公告-->
+	<div class="row my-5 py-1 py-lg-4">  <!-- 往期活动和公告-->
+		<!-- 往期活动 -->
+		<div class="col-lg-8">
+			<h2>往期活动</h2>
+				<!-- 图片轮展 -->
+				<div id="carouselExampleCaptions" class="carousel slide my-4 shadow">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  </div>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="/image/gallery/ny2024.png" class="d-block w-100" alt="2024年跨年活动">
+				      <div class="carousel-caption text-shadow">
+				        <h4>2024年跨年活动</h4>
+				        <p><i class="fa-brands fa-bilibili me-1"></i><a href="https://www.bilibili.com/video/BV1xe411S7LG" target="_blank" class="text-reset">点击观看视频</a></p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="/image/gallery/bd-bailu.png" class="d-block w-100" alt="生日会">
+				      <div class="carousel-caption text-shadow">
+				        <h4>生日会</h4>
+				        <p>摄于2023年12月</p>
+				      </div>
+				    </div>
+
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+				<!-- 图片轮展完 -->
+		</div>
+		<!-- 往期活动完 -->
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+w3.includeHTML();
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+
+</body>
+</html>
