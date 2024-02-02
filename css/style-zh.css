@@ -17,9 +17,7 @@
 .btn-outline-primary:active{background-color: #4189dd !important; color: white;}
 
 .font-vrc{font-family: Dosis, sans-serif; font-weight: bold; letter-spacing: 1px; font-size: 0.9em; text-transform: uppercase;}
-.font-teo{font-family: LiSu, serif; font-size: 1.15em; letter-spacing: -2px}
+.font-teo{font-family: LiSu, 'Noto Sans KR', serif; font-size: 1.15em; letter-spacing: -2px}
 .font-zh{font-family: 'Noto Sans SC', sans-serif;}
-
-a {text-decoration: none;}
 
 .text-shadow{text-shadow: 2px 2px 4px black;}
