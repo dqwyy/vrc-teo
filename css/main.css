@@ -7,7 +7,6 @@
 @import url("https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css");
 
 @import url('https://fonts.font.im/css?family=Dosis:700');
-@import url('https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 
 .bg-primary{background-color: #4189dd !important;}
 .text-primary{color: #4189dd !important;}
@@ -16,8 +15,11 @@
 .btn-outline-primary:hover{background-color: #4189dd; color: white;}
 .btn-outline-primary:active{background-color: #4189dd !important; color: white;}
 
-.font-vrc{font-family: Dosis, sans-serif; font-weight: bold; letter-spacing: 1px; font-size: 0.9em; text-transform: uppercase;}
-.font-teo{font-family: LiSu, 'Noto Sans KR', serif; font-size: 1.15em; letter-spacing: -2px}
-.font-zh{font-family: 'Noto Sans SC', sans-serif;}
+.vrc-logo{font-family: Dosis, sans-serif; font-weight: bold; letter-spacing: 1px; font-size: 0.9em; text-transform: uppercase;}
+.teo-logo{font-family: LiSu, 'Noto Sans CJK', sans-serif; font-size: 1.15em; letter-spacing: -2px;}
 
 .text-shadow{text-shadow: 2px 2px 4px black;}
+.text-smallcaps{font-variant-caps: small-caps;}
+
+.border-trusted {border-color: #8143e6 !important;}
+.border-known {border-color: #ff7b42 !important;} 

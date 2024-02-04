@@ -4,7 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>VRChat潮州会馆官方网站</title>
-		<link href="/css/style-zh.css" type="text/css" rel="stylesheet">
+		<meta name="description" content="VRChat元宇宙的潮汕同乡会">
+		<meta name="keywords" content="潮州会馆, 潮州, 潮汕, VRChat, VR, 元宇宙">
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<link href="/css/zh.css" type="text/css" rel="stylesheet">
 		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
 		<script src="https://www.w3schools.cn/lib/w3.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
@@ -21,14 +25,6 @@
 
 <!-- 引入NAV -->
 <div w3-include-html="/template/nav-zh.html"></div>
-<!-- 给NAV对应标签加aria-current -->
-<script type="text/javascript">
-window.onload = function() {
-	var linkElement = document.getElementById('nav-home');
-	linkElement.classList.add('active');
-	linkElement.setAttribute('aria-current', 'page');
-};
-</script>
 
 
 <div class="d-lg-none alert alert-warning alert-dismissible fade show" role="alert">
@@ -39,18 +35,18 @@ window.onload = function() {
 
 <div class="container">  <!-- HERO -->
 	<div class="row my-lg-5 d-flex align-items-center mb-5 column-gap-lg-5 mx-1 mx-lg-0">  <!-- HERO -->
-		<div class="col-lg-5 mt-lg-5 mt-4">  <!-- hero右栏 -->
+		<div class="col-lg-5 mt-lg-5 mt-4">  <!-- hero右栏占5-7 -->
 			<div class="px-lg-4">  <!-- 此div专门调logo横向大小 -->
-			  <!-- 绘制logo，p勿改，调大小改上面div的p -->
-				<div id="teo-logo" class="bg-primary text-white rounded rounded-4 text-center py-4 py-md-5">
-					<span style="direction: rtl; unicode-bidi: bidi-override; font-size: 4em; line-height: 0.8em;" class="font-teo">潮州會館</span><br />
+				<!-- 绘制logo，p勿改，调大小改上面div的p -->
+				<div class="bg-primary text-white rounded rounded-4 text-center py-4 py-md-5">
+					<span style="direction: rtl; unicode-bidi: bidi-override; font-size: 4em; line-height: 0.8em;" class="teo-logo"  lang="ko">潮州會館</span><br />
 					<span class="text-uppercase fw-bold" style="font-size: 1em; font-family: Arial; line-height: 1em; letter-spacing: 1px; word-spacing: 0.5em;">Teochew Association</span>
 				</div>
 			</div>
 			<!-- 会馆统计信息-->
 			<div class="text-body-secondary row mt-3 d-flex justify-content-sm-center mx-2 mx-lg-0">
 				<div class="col-auto">
-					<i class="fa-fw fa-solid fa-location-dot me-1 text-primary"></i>基于<span class="font-vrc"><span class="text-black bg-white">VR</span><span class="text-white bg-black rounded rounded-2 px-1">Chat</span></span>
+					<i class="fa-fw fa-solid fa-location-dot me-1 text-primary"></i>基于<span class="vrc-logo"><span class="text-black bg-white">VR</span><span class="text-white bg-black rounded rounded-2 px-1">Chat</span></span>
 				</div>
 				<div class="col-auto">
 					<i class="fa-fw fa-solid fa-clock me-1 text-primary"></i>始于2023年2月
@@ -92,64 +88,64 @@ window.onload = function() {
 			<h2 class="my-2">往期活动</h2>
 				<!-- 图片轮展 -->
 				<div id="carouselExampleCaptions" class="carousel slide my-4 shadow" data-bs-ride="carousel" data-bs-interval="10000">
-				  <div class="carousel-indicators">
-				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				  </div>
-				  <div class="carousel-inner">
-				    <div class="carousel-item active">
-				      <img src="/image/gallery/ny2024.png" class="d-block w-100" alt="2024年跨年活动">
-				      <div class="carousel-caption text-shadow">
-				        <h4>2024年跨年活动</h4>
-				        <p><a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.bilibili.com/video/BV1xe411S7LG" target="_blank" class="">
-				        	<span style="color: #E84B85;"><i class="fa-brands fa-bilibili me-1"></i>点击观看视频</span>
-				        </a></p>
-				      </div>
-				    </div>
-				    <div class="carousel-item">
-				      <img src="/image/gallery/bd-bailu.png" class="d-block w-100" alt="生日会">
-				      <div class="carousel-caption text-shadow">
-				        <h4>生日会</h4>
-				        <p>摄于2023年12月</p>
-				      </div>
-				    </div>
-				    <!-- 如果要继续加图片就写在这里 -->
-				  </div>
-				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    <span class="visually-hidden">Previous</span>
-				  </button>
-				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    <span class="visually-hidden">Next</span>
-				  </button>
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="/image/gallery/ny2024.jpg" class="d-block w-100" alt="2024年跨年活动">
+							<div class="carousel-caption text-shadow">
+								<h4>2024年跨年活动</h4>
+								<p><a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="https://www.bilibili.com/video/BV1xe411S7LG" target="_blank" class="">
+									<span style="color: #E84B85;"><i class="fa-brands fa-bilibili me-1"></i>点击观看视频</span>
+								</a></p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="/image/gallery/bd-bailu.jpg" class="d-block w-100" alt="生日会">
+							<div class="carousel-caption text-shadow">
+								<h4>生日会</h4>
+								<p>摄于2023年12月</p>
+							</div>
+						</div>
+						<!-- 如果要继续加图片就写在这里 -->
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
 				<!-- 图片轮展完 -->
 		</div>
 		<!-- 往期活动完 -->
 
-		<!-- 公告 -->
+		<!-- 公告占4-8 -->
 		<article class="col-lg-4">
 			<h2 class="my-3 text-lg-center">公告</h2>
 			<div class="card">
-			  <div class="card-header bg-info-subtle d-none">  <!-- 暂无近期公告故隐藏 -->
-			    <ul class="fa-ul">
-			    	<li><i class="fa-li fa-regular fa-hourglass-half"></i>近期公告</li>
-			    </ul>
-			  </div>
-			  <div class="card-body">
-			    <ul class="fa-ul">
-			    	<li><i class="fa-li fa-solid fa-check-to-slot"></i>已向VRChat官方提议在个人资料的语言列表中新增潮汕话选项，请大家帮忙<a class="text-decoration-none" href="https://feedback.vrchat.com/feature-requests/p/add-teochew-language-to-bio-languages-option" target="_blank">投票支持</a>。</li>
-			    	<li><i class="fa-li fa-solid fa-gamepad"></i>我的世界和七日杀服务器目前运行中，地址在QQ群公告中。</li>
-			    	<li>
-			    		<i class="fa-li fa-solid fa-radio"></i>北京时间每晚9点到10点大湾区之声电台有《天下潮人》节目，以潮汕话播报。将链接复制到游戏中的播放器，选择直播模式便可收听。<br />
-			    		<code>http://ngcdn007.cnr.cn/live/hxzs/index.m3u8</code>
-							<button class="btn btn-sm btn-outline-primary" data-clipboard-text="http://ngcdn007.cnr.cn/live/hxzs/index.m3u8">
-							    点击复制
+				<div class="card-header bg-info-subtle d-none">  <!-- 暂无近期公告故隐藏 -->
+					<ul class="fa-ul">
+						<li><i class="fa-li fa-regular fa-hourglass-half"></i>近期公告</li>
+					</ul>
+				</div>
+				<div class="card-body">
+					<ul class="fa-ul">
+						<li><i class="fa-li fa-solid fa-check-to-slot"></i>已向VRChat官方提议在个人资料的语言列表中新增潮汕话选项，请大家帮忙<a class="text-decoration-none" href="https://feedback.vrchat.com/feature-requests/p/add-teochew-language-to-bio-languages-option" target="_blank">投票支持</a>。</li>
+						<li><i class="fa-li fa-solid fa-gamepad"></i>我的世界和七日杀服务器目前运行中，地址在QQ群公告中。</li>
+						<li>
+							<i class="fa-li fa-solid fa-radio"></i>北京时间每晚9点到10点大湾区之声电台有《天下潮人》节目，以潮汕话播报。将链接复制到游戏中的播放器，选择直播模式便可收听。<br />
+							<code>http://ngcdn007.cnr.cn/live/hxzs/index.m3u8</code>
+							<button class="btn btn-sm btn-outline-primary btn-copy" data-clipboard-text="http://ngcdn007.cnr.cn/live/hxzs/index.m3u8">
+									点击复制
 							</button>
-			    	</li>
-			    </ul>
-			  </div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</article>
 		<!-- 公告完 -->
@@ -157,29 +153,230 @@ window.onload = function() {
 </div>
 
 
+<div class="container my-5">
+<h2>成员</h2>
+
+<div class="row row-gap-3 row-cols-1 row-cols-md-2 row-cols-xl-3 my-4">
+<!-- 超大三栏/中二栏/超小一栏 -->	
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/dq.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">dqwyy</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：右近</div>
+					<div class="my-3">
+						<a href="https://twitter.com/dqwyy1997" target="_blank"><i class="fa-brands fa-twitter fa-2xl me-2" style="color: #1DA1F2;"></i></a>
+						<a href="https://steamcommunity.com/id/dqwyy/" target="_blank"><i class="fa-brands fa-steam fa-2xl me-2" style="color: #171a21;"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/shigure.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">零球咕咕時雨</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：萌、Selestia</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+						<a href="https://steamcommunity.com/profiles/76561199150840833/" target="_blank"><i class="fa-brands fa-steam fa-2xl me-2" style="color: #171a21;"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-known shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/bailu.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">社恐的小白露</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：白露</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/niko.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">niko</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：Manuka</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/led.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">小夜灯</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：真冬、Chimaco Tribe、Meiyun</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/vnts.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">Vanitass</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：萌、Wolferia、Manuka</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/tom.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">TomEmt</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：桔梗、真冬</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/accl.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">ACCL</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：小狗</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-known shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/you.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">柚#SorA</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：Hozuki</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/gaojianli.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">高渐离</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：真冬</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-2" style="height: 100%; border-style: dashed !important;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="https://cdn.bootcdn.net/ajax/libs/twemoji/14.0.2/72x72/2795.png" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="text-body-secondary">如果你也想要加入成员列表，<br />请与dq联络。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
 <!-- 引入FOOTER -->
 <div w3-include-html="/template/footer-zh.html"></div>
-
-
-
-
-
-
-
-
-
-
-
 <script>
-w3.includeHTML();
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-home');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
 
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-new ClipboardJS('.btn');
-
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 
 
