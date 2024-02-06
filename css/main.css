@@ -56,8 +56,10 @@
 
 .text-shadow{text-shadow: 2px 2px 4px black;}
 .text-smallcaps{font-variant-caps: small-caps;}
-.text-indent {text-indent: 2em;}
-.p-indent p {text-indent: 2em;}
+.text-indent{text-indent: 2em;}
+.p-indent p{text-indent: 2em;}
 
-.border-trusted {border-color: #8143e6 !important;}
-.border-known {border-color: #ff7b42 !important;} 
+.border-trusted{border-color: #8143e6 !important;}
+.border-known{border-color: #ff7b42 !important;} 
+
+u{text-decoration: none; border-bottom: 1px solid;}  /*专名号*/
