@@ -12,15 +12,9 @@
 		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
 		<script src="https://www.w3schools.cn/lib/w3.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
-		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 
 <body class="bg-body-tertiary font-zh">
-
-<!--   <div w3-include-html="/include/nav-zh.html"></div>   -->
-<!--
- bg-gradient     data-bs-theme="dark"    -fluid   d-flex align-items-center    bg-primary   width: max-content;  text-reset
--->
 
 
 <!-- 引入NAV -->
@@ -28,7 +22,7 @@
 
 
 <div class="d-lg-none alert alert-warning alert-dismissible fade show" role="alert">
-	因技术能力所限，本站对手机等小屏幕设备适配不佳，建议使用电脑以获取最佳浏览体验。
+	本站对手机等小屏幕设备适配不佳，建议使用电脑浏览以获取最佳体验。
 	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
@@ -74,7 +68,7 @@
 				<div class="text-body-secondary small"><i class="bi bi-translate me-1"></i>想愛試下看潮州話正字？換到<a class="text-decoration-none" href="./">潮州話</a>版本</div>
 				<div class="text-body-secondary small"><i class="bi bi-translate me-1"></i>Can't understand Chinese? Switch to <a class="text-decoration-none" href="./en.html">English</a> version</div>
 			</p>
-			<a type="button" class="btn btn-primary btn-lg" href="https://vrc.group/TEO.9587" target="_blank" title="需要登录VRChat帐号">入会 TEO.9587</a>
+			<a type="button" class="btn btn-primary btn-lg" href="https://vrc.group/TEO.9587" target="_blank" title="需要登录VRChat帐号" data-bs-toggle="tooltip">入会 TEO.9587</a>
 			<a type="button" class="btn btn-outline-primary btn-lg ms-1" href="/about/zh.html">会馆历史</a>
 		</article>
 	</div>
@@ -128,9 +122,9 @@
 		<article class="col-lg-4">
 			<h2 class="my-3 text-lg-center">公告</h2>
 			<div class="card">
-				<div class="card-header bg-info-subtle d-none">  <!-- 暂无近期公告故隐藏 -->
-					<ul class="fa-ul">
-						<li><i class="fa-li fa-regular fa-hourglass-half"></i>近期公告</li>
+				<div class="card-header bg-danger text-warning fw-semibold fs-5">  <!-- 暂无近期公告故隐藏 -->
+					<ul style="list-style-type: none; padding-left: 0;">
+						<li style="text-indent: 2em;">在此新春佳节来临之际，VRChat潮州会馆全体同仁恭祝全球潮人龙年新正如意，身体健康，财源广进，万事顺利。</li>
 					</ul>
 				</div>
 				<div class="card-body">
@@ -140,9 +134,7 @@
 						<li>
 							<i class="fa-li fa-solid fa-radio"></i>北京时间每晚9点到10点大湾区之声电台有《天下潮人》节目，以潮汕话播报。将链接复制到游戏中的播放器，选择直播模式便可收听。<br />
 							<code>http://ngcdn007.cnr.cn/live/hxzs/index.m3u8</code>
-							<button class="btn btn-sm btn-outline-primary btn-copy" data-clipboard-text="http://ngcdn007.cnr.cn/live/hxzs/index.m3u8">
-									点击复制
-							</button>
+							<a class="btn btn-sm btn-outline-primary btn-copy mx-1" role="button" data-clipboard-text="http://ngcdn007.cnr.cn/live/hxzs/index.m3u8" onclick="alert('已复制');">复制<i class="fa-solid fa-copy ms-1"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -187,6 +179,24 @@
 					<div class="my-3">
 						<!-- 社交平台链接 -->
 						<a href="https://steamcommunity.com/profiles/76561199150840833/" target="_blank"><i class="fa-brands fa-steam fa-2xl me-2" style="color: #171a21;"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/kani.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">Kani_Nayuta</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：小狗</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+						<a href="https://www.instagram.com/ahrinayuta/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl me-2" style="color: #E1306C;"></i></a>
 					</div>
 				</div>
 			</div>
@@ -331,12 +341,46 @@
 </div>
 
 <div class="col">
-	<div class="card border border-2" style="height: 100%; border-style: dashed !important;">
+	<div class="card border border-3 border-success shadow" style="height: 100%;">
 		<div class="row" style="height: 100%;">
-			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="https://cdn.bootcdn.net/ajax/libs/twemoji/14.0.2/72x72/2795.png" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/denn.jpg" class="img-thumbnail rounded-circle ms-2"></div>
 			<div class="col">
 				<div class="card-body">
-					<div class="text-body-secondary">如果你也想要加入成员列表，<br />请与dq联络。</div>
+					<div class="card-title text-smallcaps h2">Denn Jang</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：小鸟</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-3 border-trusted shadow" style="height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="/image/avatar/muyan.jpg" class="img-thumbnail rounded-circle ms-2"></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="card-title text-smallcaps h2">Muyan</div>
+					<div class="card-subtitle text-body-secondary small">常用模型：萌</div>
+					<div class="my-3">
+						<!-- 社交平台链接 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col">
+	<div class="card border border-2" style="height: 100%; border-style: dashed !important;">
+		<div class="row" style="height: 100%;">
+			<div class="col-4 px-4 d-flex align-items-center py-3"><a href="#poi" style="cursor: pointer;"><img src="https://cdn.bootcdn.net/ajax/libs/twemoji/14.0.2/72x72/2795.png" class="img-thumbnail rounded-circle ms-2"></a></div>
+			<div class="col">
+				<div class="card-body">
+					<div class="text-body-secondary mt-3">如果你也想要加入成员列表，请与DQ联络。</div>
 				</div>
 			</div>
 		</div>
@@ -345,12 +389,23 @@
 
 </div>
 </div>
+<!-- 成员完 -->
 
 
-
-
-
-
+<!-- 画廊 -->
+<div class="container my-5">
+	<h2 class="pt-4 mb-4">画廊</h2>
+	<div class="row row-cols-1 row-cols-md-2 row-gap-4">
+		<div class="col"><img src="/image/gallery/01.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/02.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/03.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/04.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/05.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/06.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/07.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+		<div class="col"><img src="/image/gallery/08.jpg" class="img-thumbnail shadow rounded rounded-4"></div>
+</div>
+</div>
 
 
 <!-- 引入FOOTER -->
@@ -376,9 +431,9 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+new ClipboardJS('.btn');
 
 </script>
-
 
 </body>
 </html>

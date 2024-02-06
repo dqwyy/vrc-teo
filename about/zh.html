@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>关于 - VRChat潮州会馆官方网站</title>
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<link href="/css/zh.css" type="text/css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://www.w3schools.cn/lib/w3.js"></script>
+	</head>
+
+<body class="font-zh text-body">
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav-zh.html"></div>
+
+
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5">
+<article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent">
+<h1 class="text-center py-5 mb-5 border-bottom border-2 border-secondary-subtle">关于</h1>
+<p>VRChat这款游戏发行于2017年2月，距今已有数年历史。发行伊始，游戏玩家数量不多，中国玩家乃至华人玩家数量也不多，更别说潮汕玩家了。所以早期的玩家基本上是与世界各地的人一起游玩，语言也以世界通用的英文为主。后来中文玩家积攒了一定数量
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+</div>
+
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer-zh.html"></div>
+<script>
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-about');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
+
+</script>
+
+</body>
+</html>

@@ -4,22 +4,60 @@
 @import url("https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/brands.min.css");
 @import url("https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/solid.min.css");
 @import url("https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/regular.min.css");
+
 @import url("https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css");
 
 @import url('https://fonts.font.im/css?family=Dosis:700');
 
-.bg-primary{background-color: #4189dd !important;}
-.text-primary{color: #4189dd !important;}
-.btn-primary:not(:focus):not(:hover):not(:active){background-color: #4189dd;}
-.btn-outline-primary:link{background-color: white; color: #4189dd;}
-.btn-outline-primary:hover{background-color: #4189dd; color: white;}
-.btn-outline-primary:active{background-color: #4189dd !important; color: white;}
+/*  替换primary开始
+13, 110, 253;变65, 137, 221;
+#0d6efd;变#4189dd;
+*/
+:root,
+[data-bs-theme=light] {
+	--bs-blue: #4189dd;
+	--bs-primary: #4189dd;
+	--bs-primary-rgb: 65, 137, 221;
+	--bs-link-color: #4189dd;
+	--bs-link-color-rgb: 65, 137, 221;
+}
+
+.btn-primary {
+	--bs-btn-bg: #4189dd;
+	--bs-btn-border-color: #4189dd;
+	--bs-btn-disabled-bg: #4189dd;
+	--bs-btn-disabled-border-color: #4189dd;
+}
+
+.btn-outline-primary {
+	--bs-btn-color: #4189dd;
+	--bs-btn-border-color: #4189dd;
+	--bs-btn-hover-bg: #4189dd;
+	--bs-btn-hover-border-color: #4189dd;
+	--bs-btn-focus-shadow-rgb: 65, 137, 221;
+	--bs-btn-active-bg: #4189dd;
+	--bs-btn-active-border-color: #4189dd;
+	--bs-btn-disabled-color: #4189dd;
+	--bs-btn-disabled-border-color: #4189dd;
+}
+
+.dropdown-menu {
+	--bs-dropdown-link-active-bg: #4189dd;
+}
+
+.nav-pills {
+	--bs-nav-pills-link-active-bg: #4189dd;
+}
+/*替换primary结束*/
+
 
 .vrc-logo{font-family: Dosis, sans-serif; font-weight: bold; letter-spacing: 1px; font-size: 0.9em; text-transform: uppercase;}
 .teo-logo{font-family: LiSu, 'Noto Sans CJK', sans-serif; font-size: 1.15em; letter-spacing: -2px;}
 
 .text-shadow{text-shadow: 2px 2px 4px black;}
 .text-smallcaps{font-variant-caps: small-caps;}
+.text-indent {text-indent: 2em;}
+.p-indent p {text-indent: 2em;}
 
 .border-trusted {border-color: #8143e6 !important;}
 .border-known {border-color: #ff7b42 !important;} 
