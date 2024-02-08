@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hant">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>㩼謝 - VRChat潮州會館官方網站</title>
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<link href="/css/teo.css" type="text/css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://www.w3schools.cn/lib/w3.js"></script>
+	</head>
+
+<body class="font-teo text-body">
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav.html" class="sticky-top"></div>
+
+
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5">
+<article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent">
+<h1 class="text-center py-5 mb-5 border-bottom border-2 border-secondary-subtle">㩼謝</h1>
+<p>飲水思源，緣木思本。</p>
+
+<p>起只個網站個時陣用了網頂個好㩼傢伙頭，只撮傢伙頭對只個網站相輔過大力。VRChat潮州會館真心過㩼謝做只撮傢伙個撮人。</p>
+
+<div style="margin-left: 2em;">
+<h2 class="h4">網站借搭佮部署</h2>
+<ul>
+	<li><a href="https://github.com/dqwyy/vrc-teo" target="_blank" class="text-decoration-none">GitHub Pages</a></li>
+</ul>
+
+<h2 class="h4">層疊樣式表佮JavaScript庫</h2>
+<ul>
+	<li><a href="https://getbootstrap.com/" target="_blank" class="text-decoration-none">Bootstrap</a></li>
+	<li><a href="https://www.w3schools.com/w3js/" target="_blank" class="text-decoration-none">W3.JS</a></li>
+	<li><a href="https://clipboardjs.com/" target="_blank" class="text-decoration-none">clipboard.js</a></li>
+</ul>
+
+<h2 class="h4">字體佮圖標</h2>
+<ul>
+	<li><a href="https://fonts.google.com/specimen/Dosis" target="_blank" class="text-decoration-none">Dosis</a></li>
+	<li><a href="https://fonts.google.com/noto/specimen/Noto+Sans+SC" target="_blank" class="text-decoration-none">思源烏體</a></li>
+	<li><a href="https://fontawesome.com/" target="_blank" class="text-decoration-none">Font Awesome</a></li>
+</ul>
+
+<h2 class="h4">內容分發網絡</h2>
+<ul>
+	<li><a href="https://www.bootcdn.cn/" target="_blank" class="text-decoration-none">BootCDN</a></li>
+	<li><a href="https://www.googlefonts.cn/" target="_blank" class="text-decoration-none">谷歌字體中文版</a></li>
+	<li><a href="https://u.sb/css-cdn/" target="_blank" class="text-decoration-none">fonts.loli.net</a></li>
+</ul>
+
+<h2 class="h4">開發傢伙頭</h2>
+<ul>
+	<li><a href="https://browsersync.io/" target="_blank" class="text-decoration-none">Browsersync</a></li>
+	<li><a href="https://www.sublimetext.com/" target="_blank" class="text-decoration-none">Sublime Text</a></li>
+</ul>
+</div>
+
+</article>
+</div>
+
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer.html"></div>
+<script>
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-thank');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
+
+</script>
+
+</body>
+</html>
