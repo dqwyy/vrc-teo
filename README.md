@@ -1,4 +1,4 @@
 # vrc-teo
-<u>VRC</u>hat <u>Teo</u>chew Association Official Website
+**VRC**hat **Teo**chew Association Official Website
 
 <https://vrcteo.dqwyy.moe>
