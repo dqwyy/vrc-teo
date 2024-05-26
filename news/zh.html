@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>会讯 - VRChat潮州会馆官方网站</title>
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<link href="/css/zh.css" type="text/css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://www.w3schools.cn/lib/w3.js"></script>
+	</head>
+
+<body class="font-zh text-body">
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav-zh.html" class="sticky-top"></div>
+
+
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5">
+<article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent fw-normal ">
+<h1 class="text-center py-5 mb-5 border-bottom border-2 border-secondary-subtle">会讯</h1>
+
+<h2>2024年</h2>
+<ul>
+	<li>5月26日：<a href="./001/zh.html" class="text-decoration-none">以电子产品为主题的虚拟数码博物馆近日开馆，一周内到访人流量达7千人次</a></li>
+</ul>
+
+<div class="py-5 my-5"></div>
+
+</article>
+</div>
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer-zh.html"></div>
+<script>
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-news');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
+
+</script>
+
+</body>
+</html>
