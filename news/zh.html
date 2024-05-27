@@ -17,17 +17,15 @@
 <!-- 引入NAV -->
 <div w3-include-html="/template/nav-zh.html" class="sticky-top"></div>
 
-
-<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5">
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5" style="min-height: 70vh;">
 <article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent fw-normal ">
-<h1 class="text-center py-5 mb-5 border-bottom border-2 border-secondary-subtle">会讯</h1>
+<h1 class="text-center py-5 mb-4 border-bottom border-2 border-secondary-subtle">会讯</h1>
 
 <h2>2024年</h2>
 <ul>
 	<li>5月26日：<a href="./001/zh.html" class="text-decoration-none">以电子产品为主题的虚拟数码博物馆近日开馆，一周内到访人流量达7千人次</a></li>
+	<li>5月28日：[会员投稿] <a href="./002/zh.html" class="text-decoration-none">爱鸟说</a></li>
 </ul>
-
-<div class="py-5 my-5"></div>
 
 </article>
 </div>
@@ -48,6 +46,12 @@ function callback() {
 	if (linkElement) { // 确保元素存在
 		linkElement.classList.add('active');
 		linkElement.setAttribute('aria-current', 'page');
+	}
+	// 本页面无英文版，禁用NAV英文按钮
+	var linkElement = document.getElementById('nav-en');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('disabled');
+		linkElement.setAttribute('aria-disabled', 'true');
 	}
 }
 

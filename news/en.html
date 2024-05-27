@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>News - VRChat Teochew Association</title>
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://www.w3schools.cn/lib/w3.js"></script>
+	</head>
+
+<body class="text-body">
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav-en.html" class="sticky-top"></div>
+
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5" style="min-height: 70vh;">
+<article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent fw-normal ">
+<h1 class="text-center py-5 mb-4 border-bottom border-2 border-secondary-subtle">News</h1>
+
+<div class="alert alert-warning text-center" role="alert">
+  News are NOT available in English version, please refer to the <a href="./zh.html" class="text-decoration-none fw-semibold text-uppercase">Chinese version</a>.
+</div>
+
+</article>
+</div>
+
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer-en.html"></div>
+<script>
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-news');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>會訊 - VRChat潮州會館官方網站</title>
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<link href="/css/teo.css" type="text/css" rel="stylesheet">
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://www.w3schools.cn/lib/w3.js"></script>
+	</head>
+
+<body class="font-teo text-body">
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav.html" class="sticky-top"></div>
+
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5" style="min-height: 70vh;">
+<article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent fw-normal ">
+<h1 class="text-center py-5 mb-4 border-bottom border-2 border-secondary-subtle">會訊</h1>
+
+<div class="alert alert-warning text-center" role="alert">
+  有一撮會訊無翻譯做潮州話，愛看完整個會訊請跳到<a href="./zh.html" class="text-decoration-none fw-medium">電影話版本</a>。
+</div>
+
+<h2>2024年</h2>
+<ul>
+	<li>5月26號：<a href="./001" class="text-decoration-none">以電子產品為主題個虛擬數碼博物館近期開館，一星期內到訪人流量達7千人次</a></li>
+</ul>
+
+</article>
+</div>
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer.html"></div>
+<script>
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-news');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+	// 本页面无英文版，禁用NAV英文按钮
+	var linkElement = document.getElementById('nav-en');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('disabled');
+		linkElement.setAttribute('aria-disabled', 'true');
+	}
+}
+
+</script>
+
+</body>
+</html>
