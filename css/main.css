@@ -51,6 +51,13 @@
 /*替换primary结束*/
 
 
+@font-face {
+  font-family: "LiSu";
+  src:
+    local("LiSu"),
+    url("/font/LiSu.woff2") format("woff2");
+}
+
 .vrc-logo{font-family: Dosis, sans-serif; font-weight: bold; letter-spacing: 1px; font-size: 0.9em; text-transform: uppercase;}
 .teo-logo{font-family: LiSu, 'Noto Sans KR', 'Noto Sans CJK', sans-serif; font-size: 1.15em; letter-spacing: -2px;}
 
