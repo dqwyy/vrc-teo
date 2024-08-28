@@ -1,3 +1,6 @@
 Sitemap: https://vrcteo.dqwyy.moe/sitemap.xml
 User-agent: *
 Disallow: /template/
+Disallow: /css/
+Disallow: /font/
+Disallow: /template/
