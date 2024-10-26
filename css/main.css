@@ -67,6 +67,10 @@
 .p-indent p{text-indent: 2em;}
 
 .border-trusted{border-color: #8143e6 !important;}
-.border-known{border-color: #ff7b42 !important;} 
+.border-known{border-color: #ff7b42 !important;}
+.border-user{border-color: #2acf5b !important;}
+.border-new{border-color: #1678ff !important;}
+.border-visitor{border-color: #bababa !important;}
+.border-friend{border-color: #fde705 !important;}
 
 u{text-decoration: none; border-bottom: 1px solid;}  /*专名号*/
