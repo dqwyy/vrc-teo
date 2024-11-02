@@ -41,7 +41,7 @@
 </div>
 
 <p>
-	<span class="fw-normal">【※※※※讯】</span>
+	<span class="fw-normal">【※※※※县※月※日讯】</span>
 </p>
 
 
