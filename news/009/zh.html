@@ -57,9 +57,9 @@
 
 <p>比赛由新加坡资深播音员<u>林仰忠</u>先生主持，他同时是<a href="https://teochew.sg/" target="_blank" class="text-decoration-none">新加坡潮州八邑会馆</a>潮语班的老师，执教多年，并由中国当代语言学家、音韵学家<u>林伦伦</u>教授担任线上评委，由公益组织「跑路艺术小组」进行全球直播。</p>
 
-<div class="row d-flex justify-content-center mb-3">
+<div class="row d-flex justify-content-center">
 <figure class="figure col-xxl-7 col-xl-9 col">
-  <img src="https://pic.imgdb.cn/item/6741e172d29ded1a8c231ac4.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="">
+  <img src="https://pic.imgdb.cn/item/6741e172d29ded1a8c231ac4.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="参赛者与主持人林仰忠先生合影">
   <figcaption class="figure-caption fw-normal fs-6 text-center">参赛者与主持人<u>林仰忠</u>先生合影</figcaption>
 </figure>
 </div>
@@ -93,18 +93,6 @@ function callback() {
 	if (linkElement) { // 确保元素存在
 		linkElement.classList.add('active');
 		linkElement.setAttribute('aria-current', 'page');
-	}
-	// 本页面无英文版，禁用NAV英文按钮
-	var linkElement = document.getElementById('nav-en');
-	if (linkElement) { // 确保元素存在
-		linkElement.classList.add('disabled');
-		linkElement.setAttribute('aria-disabled', 'true');
-	}
-	// 本页面无潮语版，禁用NAV潮语按钮
-	var linkElement = document.getElementById('nav-teo');
-	if (linkElement) { // 确保元素存在
-		linkElement.classList.add('disabled');
-		linkElement.setAttribute('aria-disabled', 'true');
 	}
 }
 
