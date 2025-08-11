@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>VRChat官方推出活动日历功能，助力社区活动宣发 - VRChat潮州会馆会讯</title>
+		<meta name="description" content="【美国旧金山8月11日讯】本月7日，VRChat迎来了2025.3.1版本更新，本次更新新增了活动日历功能。早在之前，我们便已体验过由社区开发的中文活动日历，而此次则是由官方推出的基于群组的活动日历功能，这将更加兼容游戏，使操作起来更加方便快捷。">
+
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="VRChat官方推出活动日历功能，助力社区活动宣发 - VRChat潮州会馆会讯">
+		<meta property="og:image" content="https://pic1.imgdb.cn/item/689a1b4258cb8da5c81b0b2c.jpg">
+		<meta property="og:description" content="【美国旧金山8月11日讯】本月7日，VRChat迎来了2025.3.1版本更新，本次更新新增了活动日历功能。早在之前，我们便已体验过由社区开发的中文活动日历，而此次则是由官方推出的基于群组的活动日历功能，这将更加兼容游戏，使操作起来更加方便快捷。">
+
+		<link href="/css/main.css" type="text/css" rel="stylesheet">
+		<link href="/css/zh.css" type="text/css" rel="stylesheet">
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script src="https://cdn.jsdmirror.com/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+
+<body class="font-zh text-body">
+
+
+<!-- 引入NAV -->
+<div w3-include-html="/template/nav-zh.html" class="sticky-top"></div>
+
+
+<div class="container bg-body-tertiary shadow py-5 px-3 px-lg-5">
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb mx-2 px-2 mx-sm-3 px-sm-3 mx-md-4 px-md-4 mx-lg-5 px-lg-5">
+	<li class="breadcrumb-item"><a class="text-decoration-none fw-medium" href="/zh.html">首页</a></li>
+	<li class="breadcrumb-item"><a class="text-decoration-none fw-medium" href="/news/zh.html">会讯</a></li>
+	<li class="breadcrumb-item active fw-medium" aria-current="page">011</li>
+  </ol>
+</nav>
+
+<article class="mx-1 px-1 mx-sm-2 px-sm-2 mx-md-3 px-md-3 mx-lg-5 px-lg-5 fs-5 p-indent fw-light">
+<h1 class="text-center pt-0 pb-3">VRChat官方推出活动日历功能，助力社区活动宣发</h1>
+<div class="text-center mb-4 pb-4 small fw-normal border-bottom border-2 border-secondary-subtl">
+	dqwyy<br>2025年8月11日
+</div>
+
+<img src="https://pic1.imgdb.cn/item/689a1b4258cb8da5c81b0b2c.jpg" class="img-fluid img-thumbnail mx-1 mb-2" alt="VRChat Event Calendar Update">
+
+<p>
+	<span class="fw-normal">【美国旧金山8月11日讯】</span>本月7日，VRChat迎来了2025.3.1版本更新，本次更新新增了活动日历功能。早在之前，我们便已体验过由社区开发的<a href="https://rlvrc.cn/" class="text-decoration-none" target="_blank">中文活动日历</a>，而此次则是由官方推出的基于群组的活动日历功能，这将更加兼容游戏，使操作起来更加方便快捷。
+</p>
+
+<p>官方的活动日历可从主菜单右上角的日历图标进入，玩家可以查看所加入群组的活动日程安排。活动日程可由群组管理员在群组控制面板设置，群组成员亦可通过筛选功能去按需筛选自己感兴趣的活动类型，如观影、舞会、学术、游戏、模型等。此外活动链接可支持非VRChat用户访问，即无需登录账号即可查看，也可以将日程导入至第三方日历应用。VRChat官方亦会向玩家推荐一些精选活动。今后本会如有活动，亦会通过此功能进行发布，届时欢迎各位同仁莅临。</p>
+
+<p>此外，本月23日前登录VRChat的玩家将可以获取一份夏季赠品，其中包含6张夏季主题的贴图。如有VRChat Plus会员，将额外获得一些贴图和一把泡泡枪。</p>
+
+<p>本次更新还修复了诸多漏洞，以及进行一些微小改动，例如游戏中拍摄的照片将在元数据中新增作者和地图信息，修复翻译文本溢出等。</P>
+
+</article>
+</div>
+
+
+<!-- 引入FOOTER -->
+<div w3-include-html="/template/footer-zh.html"></div>
+<script>
+w3.includeHTML(callback);
+function callback() {
+	// 设置版权声明的当前年份
+	const spanElement = document.getElementById('thisyear');
+	if (spanElement) { // 确保元素存在
+		const currentYear = new Date().getFullYear();
+		spanElement.innerText = currentYear;
+	}
+	// 给NAV对应标签加aria-current
+	var linkElement = document.getElementById('nav-news');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('active');
+		linkElement.setAttribute('aria-current', 'page');
+	}
+	// 本页面无英文版，禁用NAV英文按钮
+	var linkElement = document.getElementById('nav-en');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('disabled');
+		linkElement.setAttribute('aria-disabled', 'true');
+	}
+	// 本页面无潮语版，禁用NAV潮语按钮
+	var linkElement = document.getElementById('nav-teo');
+	if (linkElement) { // 确保元素存在
+		linkElement.classList.add('disabled');
+		linkElement.setAttribute('aria-disabled', 'true');
+	}
+}
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+
+</body>
+</html>
