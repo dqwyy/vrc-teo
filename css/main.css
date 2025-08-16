@@ -74,3 +74,4 @@
 .border-friend{border-color: #fde705 !important;}
 
 u{text-decoration: none; border-bottom: 1px solid;}  /*专名号*/
+.abbr{text-decoration: underline; text-decoration-style: dotted;}
