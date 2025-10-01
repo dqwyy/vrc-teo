@@ -46,7 +46,7 @@
 					<i class="fa-fw fa-solid fa-clock me-1 text-primary"></i>2023年2月到只陣
 				</div>
 				<div class="col-auto">
-					<i class="fa-fw fa-solid fa-users me-1 text-primary"></i>合磨280外人
+					<i class="fa-fw fa-solid fa-users me-1 text-primary"></i>合磨290外人
 				</div>
 			</div>
 			<!-- 联络社交按钮 -->
@@ -176,7 +176,7 @@
 			<div class="col-4 px-4 d-flex align-items-center py-3"><img src="https://cdn.jsdmirror.com/gh/dqwyy/vrc-teo/image/avatar/dq.jpg" class="img-thumbnail rounded-circle ms-2" title="目澀死 Zzzz…" data-bs-toggle="tooltip"></div>
 			<div class="col">
 				<div class="card-body">
-					<div class="card-title text-smallcaps h2">dqwyy</div>
+					<div class="card-title text-smallcaps h2"><a href="https://blog.dqwyy.moe" target="_blank" class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-100-hover">dqwyy</a></div>
 					<div class="card-subtitle text-body-secondary small">癮用個翁仔：右近</div>
 					<div class="my-3">
 						<a href="https://twitter.com/dqwyy1997" target="_blank"><i class="fa-brands fa-twitter fa-2xl me-2" style="color: #1DA1F2;"></i></a>
@@ -451,19 +451,75 @@
 <div class="col">
 	<div class="card border border-2" style="height: 100%; border-style: dashed !important;">
 		<div class="row" style="height: 100%;">
-			<div class="col-4 px-4 d-flex align-items-center py-3"><a href="#poi" style="cursor: pointer;" onclick="w3.addClass('#poi','bg-warning text-body')"><img width=500px src="https://cdn.jsdmirror.com/npm/twemoji@12.0.2/2/svg/2795.svg" class="img-thumbnail rounded-circle ms-2"></a></div>
+			<div class="col-4 px-4 d-flex align-items-center py-3"><a type="button" data-bs-toggle="modal" data-bs-target="#ContactModal"><img width=500px src="https://cdn.jsdmirror.com/npm/twemoji@12.0.2/2/svg/2795.svg" class="img-thumbnail rounded-circle ms-2"></a></div>
 			<div class="col">
 				<div class="card-body">
-					<div class="text-body-secondary mt-3">若是汝也愛來湊伙，請個阿DQ呾。</div>
+					<div class="text-body-secondary mt-3">若是汝也愛來湊伙，請<a data-bs-toggle="modal" data-bs-target="#ContactModal" class="text-decoration-none" style="cursor: pointer;">個阿DQ呾</a>。</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<!-- 联络DQ之弹窗Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="ContactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centeredX">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ContactModalLabel">通過電子批聯絡</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <span class="fs-5">me@dqwyy.moe</span>
+      </div>
+      <div class="modal-footer">
+        <a href="mailto:me@dqwyy.moe"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-envelope me-1"></i>客戶端寄批</button></a>
+        <button type="button" class="btn btn-primary" onclick="navigator.clipboard.writeText('me@dqwyy.moe')" data-bs-dismiss="modal"><i class="fa-regular fa-copy me-1"></i>複製了關掉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
 </div>
 <!-- 成员完 -->
+
+
+<!-- 宣传海报 -->
+<div class="container my-5">
+	<h2 class="pt-4 mb-4">宣傳海報</h2>
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+		<div class="col">
+			<figure class="figure">
+				<a href="/image/poster/mid-autumn.jpg" target="_blank"><img src="/image/poster/mid-autumn.jpg" class="figure-img img-fluid rounded shadow" alt="中秋节海报"></a>
+				<figcaption class="figure-caption text-center">八月半海報</figcaption>
+			</figure>
+		</div>
+		<div class="col">
+			<figure class="figure">
+				<a href="/image/poster/cafe.jpg" target="_blank"><img src="/image/poster/cafe.jpg" class="figure-img img-fluid rounded shadow" alt="中文咖啡厅联动宣传海报"></a>
+				<figcaption class="figure-caption text-center">中文糕啤店聯動宣傳海報</figcaption>
+			</figure>
+		</div>
+		<div class="col">
+			<figure class="figure">
+				<a href="/image/poster/2025.jpg" target="_blank"><img src="/image/poster/2025.jpg" class="figure-img img-fluid rounded shadow" alt="2025年新年海报"></a>
+				<figcaption class="figure-caption text-center">2025年新年海報</figcaption>
+			</figure>
+		</div>
+		<div class="col">
+			<figure class="figure">
+				<a href="/image/poster/japanese.jpg" target="_blank"><img src="/image/poster/japanese.jpg" class="figure-img img-fluid rounded shadow" alt="日语学习房联动宣传海报"></a>
+				<figcaption class="figure-caption text-center">日本話學習房聯動宣傳海報</figcaption>
+			</figure>
+		</div>
+
+	</div> <!-- 闭合标签 -->
+
+</div>
+<!-- 宣传海报 完 -->
+
 
 <!-- 地图推荐 -->
 <div class="container my-5">
