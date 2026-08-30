@@ -8,6 +8,8 @@
 @import url("https://cdn.jsdmirror.com/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 @import url('https://fonts.font.im/css?family=Dosis:700');
+/* @import url('https://fonts.font.im/css2?family=Noto+Serif+KR:wght@200..900&display=swap'); */
+
 
 /*  替换primary开始
 13, 110, 253;变65, 137, 221;
@@ -49,7 +51,6 @@
 	--bs-nav-pills-link-active-bg: #4189dd;
 }
 /*替换primary结束*/
-
 
 @font-face {
   font-family: "LiSu";
